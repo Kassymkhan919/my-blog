@@ -1,12 +1,12 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout, {siteTitle} from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import {getSortedPostsData} from '../lib/posts'
-import {FetchData} from '../lib/fetchData'
- import Date from '../components/date'
+import Head from 'next/head';
+import Link from 'next/link';
+import Layout, { siteTitle } from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
+import { getSortedPostsData } from '../lib/posts';
+import { FetchData } from '../lib/fetchData';
+import Date from '../components/date';
 
-export default function Home ({ allPostsData }) {
+export default function Home({ allPostsData, location }) {
   return (
     <Layout home>
       <Head>
@@ -14,33 +14,29 @@ export default function Home ({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hi, This is Kasym's personal blog page</p>
-        <p>
-        (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <p>This is my personal web site</p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData && allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`} >
-                {title}
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-              {/* {id}
+          {allPostsData &&
+            allPostsData.map(({ id, date, title }) => (
+              <li className={utilStyles.listItem} key={id}>
+                <Link href={`/posts/${id}`}>{title}</Link>
+                <br />
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+                {/* {id}
               <br />
               {date} */}
-            </li>
-          ))}
+              </li>
+            ))}
         </ul>
       </section>
-      
-      
+
+      {/* Bad example */}
       {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
       <h2 className={utilStyles.headingLg}>Blog</h2>
       <div>
@@ -61,24 +57,22 @@ export default function Home ({ allPostsData }) {
       </div>
       </section> */}
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()  
+  const allPostsData = getSortedPostsData();
   // const res = await fetch('https://jsonplaceholder.typicode.com/todos')
   // const allPostsData = await res.json()
-  
-  
+
   // console.log(allPostsData)
-  
+
   return {
     props: {
-      allPostsData: allPostsData
-    }
-  }
+      allPostsData: allPostsData,
+    },
+  };
 }
-
 
 // export default function Home() {
 //   return (
