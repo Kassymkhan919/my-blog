@@ -10,7 +10,7 @@ const Resume = () => {
         <div className="grid justify">
           <h1 className={`${utilstyles.headingXl} justify-self-center`}>Work Experience</h1>
           <h1 className={utilstyles.headingLg}>Software Engineer</h1>
-          <h3 className={utilstyles.headingMd}> BioInteractive Tech</h3>
+          <h3 className={`${utilstyles.headingMd} text-blue-500`}> BioInteractive Tech</h3>
           <h3 className="font-semibold text-gray-small"> September 2020- April 2021</h3>
           <p className={utilstyles.headingMd}>
             Working as a junior software engineer at BIT, I Created interface to connect iOS devices to Bluetooth low

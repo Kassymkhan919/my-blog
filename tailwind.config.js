@@ -14,16 +14,16 @@ module.exports = {
       extra: ['IBM Plex Mono'],
       serif: ['Georgia'],
     },
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      black: colors.black,
-      white: colors.white,
-      gray: colors.trueGray,
-      indigo: colors.indigo,
-      red: colors.rose,
-      yellow: colors.amber,
-    },
+    // colors: {
+    //   transparent: 'transparent',
+    //   current: 'currentColor',
+    //   black: colors.black,
+    //   white: colors.white,
+    //   gray: colors.trueGray,
+    //   indigo: colors.indigo,
+    //   red: colors.rose,
+    //   yellow: colors.amber,
+    // },
     extend: {
       colors: {
         primary: {
@@ -43,14 +43,10 @@ module.exports = {
           DEFAULT: '#03203C',
           dark: '#009eeb',
           regal: '#243c5a',
-          hover: '#60A5FA',
         },
         gray: {
           dark: '#6B7280',
           small: '#999999',
-        },
-        white: {
-          DEFAULT: '#FFFFFF',
         },
         green: {
           DEFAULT: '#10B981',

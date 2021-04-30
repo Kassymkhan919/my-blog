@@ -27,13 +27,13 @@ export const Navbar = () => {
 
             <li>
               <Link href="/blog">
-                <a className="px-2 py-3 lg:inline-block lg:mt-0 lowercase text-white hover:text-blue-hover">Blog</a>
+                <a className="px-2 py-3 lg:inline-block lg:mt-0 lowercase text-white hover:text-black">Blog</a>
               </Link>
             </li>
 
             <li>
               <Link href="/posts/newintro">
-                <a className="px-2 py-3 lg:inline-block lg:mt-0 lowercase text-white hover:text-blue-hover">About Me</a>
+                <a className="px-2 py-3 lg:inline-block lg:mt-0 lowercase text-white hover:text-blue-400">About Me</a>
               </Link>
             </li>
 
