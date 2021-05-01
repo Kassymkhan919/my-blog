@@ -84,14 +84,14 @@
   }
 
   a {
-    color: #062c3d;
+    @apply text-gray-500;
     text-decoration: none;
   }
 
   a:hover,
   a:focus,
   a:active {
-    color: #062c3d;
+    @apply text-primary-dark;
   }
 
   .gatsby-highlight {

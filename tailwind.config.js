@@ -59,22 +59,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-// module.exports = {
-//   purge: ['./src/**/*.js'],
-//   theme: {
-//     container: {
-//       center: true,
-//       padding: '1.5rem',
-//       'max-width': {
-//         default: '10rem',
-//       },
-//     },
-//     fontFamily: {
-//       display: ['Permanent Marker', 'sans-serif'],
-//     },
-
-//   },
-//   variants: {},
-//   plugins: [],
-// };
