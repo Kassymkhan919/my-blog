@@ -14,7 +14,7 @@ export const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="bg-primary ">
+    <nav className="bg-primary p-0">
       <div className="container flex flex-col lg:flex-row items-center justify-between flex-wrap my-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6 ">
           <a href="/">
