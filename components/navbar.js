@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 var menu = [
   { name: 'home', path: '/' },
   { name: 'blog', path: '/blog' },
+  { name: 'resume', path: '/resume' },
   { name: 'about me', path: '/posts/newintro' },
 ];
 
