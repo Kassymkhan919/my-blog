@@ -7,7 +7,7 @@ var menu = [
   { name: 'home', path: '/' },
   { name: 'blog', path: '/blog' },
   { name: 'resume', path: '/resume' },
-  { name: 'about me', path: '/posts/newintro' },
+  { name: 'about me', path: '/aboutme' },
 ];
 
 export const Navbar = () => {

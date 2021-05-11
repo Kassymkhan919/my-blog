@@ -85,7 +85,7 @@ export const Footer = () => {
 
         <div className="my-3">
           Copyright ©{' '}
-          <a className="hover:text-blue-400" href="/posts/newintro">
+          <a className="hover:text-blue-400" href="/">
             Kassymkhan Bekbolatov
           </a>{' '}
           {new Date().getFullYear()}.
