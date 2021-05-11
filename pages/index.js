@@ -8,10 +8,10 @@ const IndexPage = () => {
         <div className="max-w-xl mx-12 my-32">
           <h1 className="font-display text-5xl">Hello, I'm Kasym.</h1>
           <div className="mt-4 font-light text-xl  font-extra">
-            Software Engineer at{' '}
-            <a className="text-company hover:text-company-dark" href="#" target="_self" rel="noopener noreferrer">
+            <p className="text-company">Front-end and iOS</p> Software Developer{''}
+            {/* <a className="text-company hover:text-company-dark" href="#" target="_self" rel="noopener noreferrer">
               Google
-            </a>
+            </a> */}
             , Vancouver
           </div>
 
