@@ -5,6 +5,13 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import { FetchData } from '../lib/fetchData';
 import Date from '../components/date';
+import { useEffect, useState } from 'react';
+import Post from '../components/post';
+
+const client = require('contentful').createClient({
+  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+});
 
 export default function Home({ allPostsData, location }) {
   return (
@@ -32,9 +39,6 @@ export default function Home({ allPostsData, location }) {
                 <small className={utilStyles.lightText}>
                   <Date dateString={date} />
                 </small>
-                {/* {id}
-              <br />
-              {date} */}
               </li>
             ))}
         </ul>
@@ -42,23 +46,24 @@ export default function Home({ allPostsData, location }) {
 
       {/* Bad example */}
       {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-      <h2 className={utilStyles.headingLg}>Blog</h2>
-      <div>
-        {allPostsData.map(({id, userId, title, completed}) =>(
-          <li className={utilStyles.listItem} key={id}>
-            {title}
+        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <div>
+          {allPostsData.map(({ id, title, completed }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/posts/${id}`}>{title}</Link>
+
+              <br />
+              {completed}
+            </li>
+          ))}
+          <li lassName={utilStyles.listItem}>
+            {allPostsData.title}
             <br />
-            {completed}
+            {allPostsData.completed ? 1 : 0}
+            <br />
+            {allPostsData.id}
           </li>
-        ))}
-        <li lassName={utilStyles.listItem} >
-          {allPostsData.title}
-          <br />
-          {allPostsData.completed? 1:0}
-          <br />
-          {allPostsData.id}
-        </li>
-      </div>
+        </div>
       </section> */}
     </Layout>
   );
