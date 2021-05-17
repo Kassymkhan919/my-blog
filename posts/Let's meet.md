@@ -13,3 +13,5 @@ Currently I am building this personal website portfolio/blog.
 
 My Interests are programming, design, reading, playing football (soccer).
 I like programming and design that's why I like doing front-end and iOS development.
+
+😉
