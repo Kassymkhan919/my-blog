@@ -28,7 +28,8 @@ export default function Home({ allPostsData, location }) {
         </p>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      {/* Blog in AboutMe Section */}
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData &&
@@ -42,7 +43,7 @@ export default function Home({ allPostsData, location }) {
               </li>
             ))}
         </ul>
-      </section>
+      </section> */}
 
       {/* Bad example */}
       {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
