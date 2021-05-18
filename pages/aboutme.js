@@ -23,8 +23,8 @@ export default function Home({ allPostsData, location }) {
         <p>Hi, This is Kasym's personal blog page</p>
         <p>
           I am interested in front-end and iOS developement. I am final year computer science student at SFU. <br /> I
-          will document my learning journey here and write notes on what I like. <br /> Below you can find notes from my
-          blog. Enjoy!
+          will document my learning journey here and write notes on what I like. <br />
+          Enjoy!
         </p>
       </section>
 
