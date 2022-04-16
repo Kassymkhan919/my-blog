@@ -15,7 +15,7 @@ const client = require('contentful').createClient({
 
 export default function Home({ allPostsData, location }) {
   return (
-    <Layout home>
+    <Layout aboutme>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -45,27 +45,7 @@ export default function Home({ allPostsData, location }) {
         </ul>
       </section> */}
 
-      {/* Bad example */}
-      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <div>
-          {allPostsData.map(({ id, title, completed }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
 
-              <br />
-              {completed}
-            </li>
-          ))}
-          <li lassName={utilStyles.listItem}>
-            {allPostsData.title}
-            <br />
-            {allPostsData.completed ? 1 : 0}
-            <br />
-            {allPostsData.id}
-          </li>
-        </div>
-      </section> */}
     </Layout>
   );
 }

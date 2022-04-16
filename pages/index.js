@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 
 const IndexPage = () => {
   return (
-    <Layout aboutme>
+    <Layout home>
       <div className="flex flex-1 flex-col justify-center items-center bg-primary text-white">
         <div className="max-w-xl mx-12 my-32">
           <h1 className="font-display text-5xl">Hello, I'm Kasym.</h1>

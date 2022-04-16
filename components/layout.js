@@ -28,13 +28,13 @@ export default function Layout({ children, home, aboutme }) {
       </Head>
 
       {/* If aboutme is passed to Layout componenet then display only aboutme page w/o decorations for other pages, otherwise show decor */}
-      {aboutme ? (
+      {home ? (
         <main>{children}</main>
       ) : (
         <div className={styles.container}>
           <header className={styles.header}>
             {/* If home is passed in Layout then show the home page w/o backhome button at the bottom, otherwise show other page w/ button */}
-            {home ? (
+            {aboutme ? (
               <>
                 <Image
                   priority
