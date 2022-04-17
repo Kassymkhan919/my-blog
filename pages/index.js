@@ -18,7 +18,7 @@ const IndexPage = () => {
           <div className="mt-2 font-light text-sm  font-extra">
             Previously at {''}
             {/* <h3 className="text-gray-500 hover:text-blue-hover">BioInteractive Tech</h3> */}
-            <a className="text-gray-500 hover:text-blue-hover" href="#" target="_self" rel="noopener noreferrer">
+            <a className="text-gray-500 hover:text-blue-hover" href="https://www.tenzrhealth.com/" target="_blank" rel="noopener noreferrer">
               BioInteractive Tech
             </a>
             ,{' '}
