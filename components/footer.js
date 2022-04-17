@@ -48,7 +48,7 @@ export const Footer = () => {
   //   );
 
   return (
-    <div className="bg-primary text-white text-sm h-screen">
+    <div className="bg-primary text-white text-sm pb-52">
       <div className="container flex flex-col item-center text-center">
         <div className="mt-1 mb-4">
           <a
