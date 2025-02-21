@@ -9,6 +9,12 @@ const Resume = () => {
       <div className={styles.container}>
         <div className="grid justify">
           <h1 className={`${utilstyles.headingXl} justify-self-center `}>Work Experience</h1>
+          <h1 className={utilstyles.headingLg}>Software Developement Engineer</h1>
+          <h3 className={`${utilstyles.headingMd} text-primary font-semibold`}> Workday Inc</h3>
+          <h3 className="font-semibold text-gray-small"> June 2022 - Present</h3>
+          <p className={utilstyles.headingMd}>
+          At Workday, I drive CI/CD optimization and test infrastructure enhancements, enabling faster, more reliable software releases. I led the design and implementation of a CI/CD Metrics Collection system, improving pipeline performance visibility and empowering leadership with data-driven release decisions. By automating KPI extraction, I boosted build monitoring efficiency by 40%, reducing manual effort. I also spearheaded a private cloud migration, cutting CI/CD maintenance by 50% and improving execution stability by 30%. Through historical trend analysis, I collaborated with cross-functional teams to reduce average build times by 20% and lower failure rates. Additionally, I developed an automated data pipeline for performance monitoring, saving 5+ hours per week in manual reporting and enhancing incident response times. My work ensures scalable, efficient, and high-performing CI/CD infrastructure at Workday.
+          </p>
           <h1 className={utilstyles.headingLg}>Software Engineer</h1>
           <h3 className={`${utilstyles.headingMd} text-primary font-semibold`}> BioInteractive Tech</h3>
           <h3 className="font-semibold text-gray-small"> September 2020- April 2021</h3>
