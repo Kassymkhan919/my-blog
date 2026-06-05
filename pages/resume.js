@@ -9,11 +9,25 @@ const Resume = () => {
       <div className={styles.container}>
         <div className="grid justify">
           <h1 className={`${utilstyles.headingXl} justify-self-center `}>Work Experience</h1>
+          <h1 className={utilstyles.headingLg}>Software Engineer</h1>
+          <h3 className={`${utilstyles.headingMd} text-primary font-semibold`}>SolidCore.ai</h3>
+          <h3 className="font-semibold text-gray-small">April 2025 – Present · Remote</h3>
+          <p className={utilstyles.headingMd}>
+            At SolidCore.ai, I work across the full stack building and maintaining production infrastructure for an AI-native platform.
+            I led a refactoring initiative to centralize database operations into a single SQLAlchemy mixin across 20 classes, removing 150+ lines of duplicate code and reducing bug blast radius to a single source of truth.
+            I built Temporal workflows to sync and process AWS resource data (Bedrock, CloudTrail, Guardrails) into PostgreSQL using Pydantic and SQLAlchemy, running reliably across multiple enterprise deployments.
+            I designed and implemented a row reaping mechanism in a Temporal workflow to automatically purge stale processed records, reducing long-term database storage growth at scale.
+            I patched 20+ critical and high-severity CVEs across frontend and backend Docker images on ECR by upgrading base Node and Alpine images.
+            I provisioned CloudWatch alarms for customer-facing AWS resources using OpenTofu (Terraform), improving observability and satisfying Drata SOC2 compliance requirements.
+            I designed and implemented a user management system with Auth0, including RBAC, MFA, and email invitation flows.
+            I built dashboard pages and data tables in Next.js, and upgraded the app from v15 to v16 by auditing breaking changes, applying codemods, and manually verifying edge cases.
+          </p>
+
           <h1 className={utilstyles.headingLg}>Software Developement Engineer</h1>
           <h3 className={`${utilstyles.headingMd} text-primary font-semibold`}> Workday Inc</h3>
-          <h3 className="font-semibold text-gray-small"> June 2022 - Present</h3>
+          <h3 className="font-semibold text-gray-small"> June 2022 - February 2025</h3>
           <p className={utilstyles.headingMd}>
-          At Workday, I drive CI/CD optimization and test infrastructure enhancements, enabling faster, more reliable software releases. I led the design and implementation of a CI/CD Metrics Collection system, improving pipeline performance visibility and empowering leadership with data-driven release decisions. By automating KPI extraction, I boosted build monitoring efficiency by 40%, reducing manual effort. I also spearheaded a private cloud migration, cutting CI/CD maintenance by 50% and improving execution stability by 30%. Through historical trend analysis, I collaborated with cross-functional teams to reduce average build times by 20% and lower failure rates. Additionally, I developed an automated data pipeline for performance monitoring, saving 5+ hours per week in manual reporting and enhancing incident response times. My work ensures scalable, efficient, and high-performing CI/CD infrastructure at Workday.
+          At Workday, I drove CI/CD optimization and test infrastructure enhancements, enabling faster, more reliable software releases. I led the design and implementation of a CI/CD Metrics Collection system, improving pipeline performance visibility and empowering leadership with data-driven release decisions. By automating KPI extraction, I boosted build monitoring efficiency by 40%, reducing manual effort. I also spearheaded a private cloud migration, cutting CI/CD maintenance by 50% and improving execution stability by 30%. Through historical trend analysis, I collaborated with cross-functional teams to reduce average build times by 20% and lower failure rates. Additionally, I developed an automated data pipeline for performance monitoring, saving 5+ hours per week in manual reporting and enhancing incident response times. My work ensures scalable, efficient, and high-performing CI/CD infrastructure at Workday.
           </p>
 
           <h1 className={utilstyles.headingLg}>Software Engineer</h1>

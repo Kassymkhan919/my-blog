@@ -1,6 +1,7 @@
 ---
 title: "Favorites"
 date: '2021-05-17'
+draft: true
 ---
 
 # I want to share my things that I like
