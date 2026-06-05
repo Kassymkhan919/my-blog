@@ -22,7 +22,7 @@ export default function Home({ allPostsData, location }) {
       <section className={utilStyles.headingMd}>
         <p>Hi, This is Kasym's personal blog page</p>
         <p>
-          I am interested in front-end and iOS developement. I am final year computer science student at SFU. <br /> I
+          I am software engineer interested in data and infrastructure development. <br /> I
           will document my learning journey here and write notes on what I like. <br />
           Enjoy!
         </p>
