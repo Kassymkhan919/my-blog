@@ -8,7 +8,7 @@ const IndexPage = () => {
         <div className="max-w-xl mx-12 my-32">
           <h1 className="font-display text-5xl">Hello, I'm Kasym.</h1>
           <div className="mt-4 font-light text-xl  font-extra">
-            <p className="text-company">Data and Inrastructure </p> Software Engineer{''}
+            <p className="text-company">Data and Infrastructure </p> Software Engineer{''}
             {/* <a className="text-company hover:text-company-dark" href="#" target="_self" rel="noopener noreferrer">
               Google
             </a> */}
