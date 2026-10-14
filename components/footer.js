@@ -4,7 +4,7 @@ import { faGithub, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg
 
 export const Footer = () => {
   return (
-    <div className="mt-auto bg-primary text-white text-sm pb-8">
+    <div className="mt-auto bg-primary text-white text-sm pb-8 pt-8">
       <div className="container flex flex-col item-center text-center">
         <div className="mt-1 mb-4">
           <a
