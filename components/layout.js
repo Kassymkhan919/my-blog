@@ -11,7 +11,7 @@ export const siteTitle = 'KB';
 
 export default function Layout({ children, home, aboutme }) {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <Navbar />
       <Head>
         <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
@@ -23,7 +23,7 @@ export default function Layout({ children, home, aboutme }) {
       {home ? (
         <main className="flex flex-1 flex-col">{children}</main>
       ) : (
-        <div className={styles.container}>
+        <div className={`${styles.container} flex-1`}>
           <header className={styles.header}>
             {/* If home is passed in Layout then show the home page w/o backhome button at the bottom, otherwise show other page w/ button */}
             <Image
@@ -48,6 +48,6 @@ export default function Layout({ children, home, aboutme }) {
       )}
 
       <Footer />
-    </>
+    </div>
   );
 }
