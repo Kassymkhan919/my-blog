@@ -26,14 +26,12 @@ export const Navbar = () => {
           <ul className="flex flex-row list-none ">
             {menu.map((item) => (
               <li key={item.name.toLowerCase()}>
-                <Link href={item.path}>
-                  <a
+                <Link href={item.path}
                     className={`px-2 py-3 lg:inline-block lg:mt-0 lowercase hover:text-blue-400 ${
                       item.path === router.asPath ? 'text-gray-500' : 'text-white'
                     }`}
-                  >
+                >
                     {item.name}
-                  </a>
                 </Link>
               </li>
             ))}

@@ -1,6 +1,8 @@
 import '../styles/global.css';
-// import 'tailwindcss/tailwind.css';
-import { Html, Head, Main } from 'next/document';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;

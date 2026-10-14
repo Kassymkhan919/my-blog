@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Roboto+Mono:wght@100&display=swap');
+
+
 @layer components {
   :root {
     --color-twitter: #00acee;
@@ -11,8 +15,6 @@
     --color-secondary-dark: #006a71;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Roboto+Mono:wght@100&display=swap');
 
   /* html,
   body {

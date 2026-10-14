@@ -2,12 +2,26 @@ import React from 'react';
 import styles from '../components/layout.module.css';
 import utilstyles from '../styles/utils.module.css';
 import Layout from '../components/layout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 const Resume = () => {
   return (
     <Layout>
       <div className={styles.container}>
         <div className="grid justify">
+          <h1 className={utilstyles.headingXl}>Endeavors</h1>
+          <h1 className={`${utilstyles.headingLg} text-primary font-semibold`}>
+            Finly - AI Expense Tracker
+            <br />
+            <a href="https://t.me/FinlyTrackBot" target="_blank" rel="noopener noreferrer">
+              @FinlyTrackBot
+              <FontAwesomeIcon icon={faTelegram} className="text-2xl ml-2" />
+            </a>
+          </h1>
+          <p className={utilstyles.headingMd}>
+          Built and launched Finly, a Telegram bot for tracking personal and group finances in plain text. Users just send messages like "50 coffee" or "30€ taxi yesterday", and Finly parses the amount, currency (60+ supported), and date, including relative dates like "last friday". Transactions are categorized automatically with AI, with keyword matching as a fallback. Developed the backend in Python, plus a Telegram Mini App dashboard with spending trends, transaction history, and budget progress. Added timezone-aware daily reminders and a Monday weekly summary. Monetized with a freemium model, where premium plans paid with Telegram Stars or card unlock budgets with spending alerts, color-coded Excel and CSV export, and editing. I keep developing Finly with AI coding tools like Cursor and Claude Code, which help me ship new features quickly.
+          </p>
           <h1 className={`${utilstyles.headingXl} justify-self-center `}>Work Experience</h1>
           <h1 className={utilstyles.headingLg}>Software Engineer</h1>
           <h3 className={`${utilstyles.headingMd} text-primary font-semibold`}>SolidCore.ai</h3>
