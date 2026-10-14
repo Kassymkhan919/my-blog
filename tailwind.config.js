@@ -10,8 +10,8 @@ module.exports = {
       'max-width': { default: '10rem' },
     },
     fontFamily: {
-      display: ['Permanent Marker', 'sans-serif'],
-      extra: ['IBM Plex Mono'],
+      display: ['var(--font-display)', 'cursive'],
+      extra: ['var(--font-extra)', 'monospace'],
       serif: ['Georgia'],
     },
     // colors: {

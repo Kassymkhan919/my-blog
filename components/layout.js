@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { IBM_Plex_Mono, Permanent_Marker } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './layout.module.css';
@@ -6,18 +6,25 @@ import utilStyles from '../styles/utils.module.css';
 import { Navbar } from './navbar';
 import { Footer } from './footer';
 
+const permanentMarker = Permanent_Marker({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-display',
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  weight: '600',
+  subsets: ['latin'],
+  variable: '--font-extra',
+});
+
 const name = 'Kassymkhan Bekbolatov';
 export const siteTitle = 'KB';
 
 export default function Layout({ children, home, aboutme }) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className={`flex min-h-screen flex-col ${permanentMarker.variable} ${ibmPlexMono.variable}`}>
       <Navbar />
-      <Head>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;600&display=swap');
-        </style>
-      </Head>
 
       {/* If aboutme is passed to Layout componenet then display only aboutme page w/o decorations for other pages, otherwise show decor */}
       {home ? (
