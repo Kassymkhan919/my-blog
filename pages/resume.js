@@ -1,9 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '../components/layout.module.css';
 import utilstyles from '../styles/utils.module.css';
 import Layout from '../components/layout';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 const Resume = () => {
   return (
@@ -12,11 +11,25 @@ const Resume = () => {
         <div className="grid justify">
           <h1 className={utilstyles.headingXl}>Endeavors</h1>
           <h1 className={`${utilstyles.headingLg} text-primary font-semibold`}>
+            <a
+              href="https://t.me/FinlyTrackBot"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Finly on Telegram"
+              className="mr-2 inline-block h-9 w-9 overflow-hidden rounded-md align-middle"
+            >
+              <Image
+                src="/images/finly_logo.jpg"
+                alt=""
+                width={36}
+                height={36}
+                className="h-9 w-9 scale-[2.2] object-cover"
+              />
+            </a>
             Finly - AI Expense Tracker
             <br />
             <a href="https://t.me/FinlyTrackBot" target="_blank" rel="noopener noreferrer">
               @FinlyTrackBot
-              <FontAwesomeIcon icon={faTelegram} className="text-2xl ml-2" />
             </a>
           </h1>
           <p className={utilstyles.headingMd}>
