@@ -1,8 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
-import styles from '../components/layout.module.css';
-import utilstyles from '../styles/utils.module.css';
-import Layout from '../components/layout';
+import styles from '../../components/layout.module.css';
+import utilstyles from '../../styles/utils.module.css';
+import Layout from '../../components/layout';
 
 const Resume = () => {
   return (

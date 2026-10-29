@@ -12,8 +12,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^3.5.0",
-    "axios": "^0.21.1",
-    "contentful": "^8.3.5",
     "date-fns": "^2.21.1",
     "gray-matter": "^4.0.2",
     "next": "^14.2.35",

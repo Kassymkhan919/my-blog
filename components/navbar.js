@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
-import Link from 'next/link';
+'use client';
+import React from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 var menu = [
   { name: 'home', path: '/' },
@@ -11,7 +12,7 @@ var menu = [
 ];
 
 export const Navbar = () => {
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <nav className="bg-primary p-1">
@@ -28,7 +29,7 @@ export const Navbar = () => {
               <li key={item.name.toLowerCase()}>
                 <Link href={item.path}
                     className={`px-2 py-3 lg:inline-block lg:mt-0 lowercase hover:text-blue-400 ${
-                      item.path === router.asPath ? 'text-gray-500' : 'text-white'
+                      item.path === pathname ? 'text-gray-500' : 'text-white'
                     }`}
                 >
                     {item.name}

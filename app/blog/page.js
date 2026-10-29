@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
-import Date from '../components/date';
-import { getSortedPostsData } from '../lib/posts';
-import styles from '../components/layout.module.css';
+import Layout from '../../components/layout';
+import utilStyles from '../../styles/utils.module.css';
+import Date from '../../components/date';
+import styles from '../../components/layout.module.css';
+import { getSortedPostsData } from '../../lib/posts';
 
-export default function Blog({ allPostsData }) {
+export default function Blog() {
+  const allPostsData = getSortedPostsData();
   return (
     <Layout>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${styles.container}`}>
@@ -19,23 +20,10 @@ export default function Blog({ allPostsData }) {
                 <small className={utilStyles.lightText}>
                   <Date dateString={date} />
                 </small>
-                {/* {id}
-              <br />
-              {date} */}
               </li>
             ))}
         </ul>
       </section>
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-    revalidate: 10,
-  };
 }
