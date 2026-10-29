@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className="container flex flex-col lg:flex-row items-center justify-between flex-wrap my-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6 ">
           <a href="/">
-            <Image src="/images/KB-logo-black.svg" alt="KB Logo" width={70} height={70} className="logo" />
+            <Image src="/images/KB-logo-white.svg" alt="KB Logo" width={70} height={70} className="logo" />
           </a>
         </div>
 

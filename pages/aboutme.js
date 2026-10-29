@@ -20,9 +20,9 @@ export default function Home({ allPostsData, location }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hi, This is Kasym's personal blog page</p>
+        <p>I'm Kassymkhan — most people call me Kasym. I'm a software engineer working on backend and infrastructure systems, currently at SolidCore.ai. Previously I built CI/CD and observability tooling at Workday and full-stack products at Craver Tech and BioInteractive.</p>
         <p>
-          I am software engineer interested in data and infrastructure development. <br /> I
+          I grew up in Almaty, Kazakhstan, studied computing science at SFU, and now live in Toronto. My interests sit at the intersection of data, infrastructure, and developer tooling — the unglamorous systems that have to be correct. <br /> I
           will document my learning journey here and write notes on what I like. <br />
           Enjoy!
         </p>

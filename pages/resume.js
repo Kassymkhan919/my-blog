@@ -50,7 +50,7 @@ const Resume = () => {
             I built dashboard pages and data tables in Next.js, and upgraded the app from v15 to v16 by auditing breaking changes, applying codemods, and manually verifying edge cases.
           </p>
 
-          <h1 className={utilstyles.headingLg}>Software Developement Engineer</h1>
+          <h1 className={utilstyles.headingLg}>Software Development Engineer</h1>
           <h3 className={`${utilstyles.headingMd} text-primary font-semibold`}> Workday Inc</h3>
           <h3 className="font-semibold text-gray-small"> June 2022 - February 2025</h3>
           <p className={utilstyles.headingMd}>
@@ -86,7 +86,7 @@ const Resume = () => {
           </p>
 
           <h1 className={`${utilstyles.headingXl} justify-self-center`}>Education</h1>
-          <h1 className={utilstyles.headingLg}>Simon Fraser Univeristy</h1>
+          <h1 className={utilstyles.headingLg}>Simon Fraser University</h1>
           <div>
             <h2 className="text-primary font-semibold">Bachelors of Science, Computing Science</h2>
             <h2 className="jusitfy-self-end">2017 - 2021</h2>
@@ -94,7 +94,7 @@ const Resume = () => {
           <p>Dean's Honor Roll</p>
 
           <h1 className={`${utilstyles.headingXl} justify-self-center`}>Technical Projects</h1>
-          <h1 className={`${utilstyles.headingLg} text-primary font-semibold`}>E-COMMERECE ONLINE BOOKSTORE</h1>
+          <h1 className={`${utilstyles.headingLg} text-primary font-semibold`}>E-COMMERCE ONLINE BOOKSTORE</h1>
           <p>
             Created online platform using Django to allow users to buy and sell books online. Built front-end/back-end
             for book listing page and functionality for sellers to add books to sell. As product owner led team of 5 to
